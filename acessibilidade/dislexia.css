@@ -1,0 +1,72 @@
+* Estilos para melhorar a acessibilidade para pessoas com dislexia */
+
+/* Cores de fundo e texto para melhorar o contraste */
+.dyslexia-friendly{
+    background-color: #cccccc; /* Fundo mais suave */
+    color: #000000; /* Cor de texto mais escura */
+    font-family: 'Arial', sans-serif; /* Fonte mais simples e legível */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body .dyslexia-friendly{
+    background-color: white;
+}
+
+/* Ajustes na fonte para melhorar a legibilidade */
+.dyslexia-friendly, .dyslexia-friendly p, .dyslexia-friendly h1, .dyslexia-friendly h2, .dyslexia-friendly h3, .dyslexia-friendly h4, .dyslexia-friendly h5, .dyslexia-friendly h6 {
+    font-family: Arial, sans-serif; /* Fonte mais legível */
+}
+
+/* Aumento do espaçamento entre as linhas para melhorar a leitura */
+.dyslexia-friendly {
+    line-height: 2.6; /* Espaçamento entre linhas aumentado */
+}
+
+/* Aumento do espaçamento entre as letras para melhorar a leitura */
+.dyslexia-friendly {
+    letter-spacing: 0.05em; /* Espaçamento entre letras aumentado */
+}
+
+/* Remoção de sublinhados para melhorar a leitura */
+.dyslexia-friendly a {
+    text-decoration: none; /* Links sem sublinhado */
+}
+
+/* Inversão de cores para realçar o texto */
+.dyslexia-friendly h1, .dyslexia-friendly h2, .dyslexia-friendly h3, .dyslexia-friendly h4, .dyslexia-friendly h5, .dyslexia-friendly h6 {
+    background-color: #000; /* Fundo preto para títulos */
+    color: #fff; /* Texto branco para títulos */
+    padding: 0.2em 0.5em; /* Espaçamento interno nos títulos */
+}
+
+/* Ajuste de cores para links */
+.dyslexia-friendly a {
+    color: #007bff; /* Cor azul para links */
+}
+
+/* Estilos específicos para o botão "Dislexia" ativado */
+.dyslexia-friendly .btn-secondary.dyslexia-active {
+    background-color: #007bff; /* Cor de fundo azul para o botão ativo */
+    color: #fff; /* Texto branco para o botão ativo */
+}
+
+/* Estilos para o modo de alto contraste */
+.high-contrast {
+    background-color: #fff; /* Fundo branco */
+    color: #000; /* Texto preto */
+}
+
+/* Ajustes na fonte para o modo de alto contraste */
+.high-contrast, .high-contrast p, .high-contrast h1, .high-contrast h2, .high-contrast h3, .high-contrast h4, .high-contrast h5, .high-contrast h6 {
+    font-family: Arial, sans-serif; /* Fonte mais legível */
+}
+
+/* Aumento do espaçamento entre as linhas para o modo de alto contraste */
+.high-contrast {
+    line-height: 2; /* Espaçamento entre linhas aumentado */
+}
+
+/* Aumento do espaçamento entre as letras para o modo de alto contraste */
+.high-contrast {
+    letter-spacing: 2.5em; /* Espaçamento entre letras aumentado */
+}

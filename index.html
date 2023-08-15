@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <title>Daniel Almeida</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./acessibilidade/autismo.css">
+    <link rel="stylesheet" href="./acessibilidade/dislexia.css">
+    <link rel="stylesheet" href="./acessibilidade/deficiencia-fisica.css">
+    <link rel="stylesheet" href="./acessibilidade/deficiencia-visual.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="">
+    <div class="accessibility-panel">
+        <button id="accessibility-toggle" class="btn btn-primary">Acessibilidade</button>
+        <div id="accessibility-options" class="accessibility-options">
+            <button id="autism-toggle" class="btn btn-secondary">Autismo</button>
+            <button id="dyslexia-toggle" class="btn btn-secondary">Dislexia</button>
+            <button id="physical-disability-toggle" class="btn btn-secondary">Deficiência física</button>
+            <button id="visual-impairment-toggle" class="btn btn-secondary">Deficiência visual</button>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        
+    </script>
+    <header>
+        <nav class="navbar navbar-expand-lg" style="background-color: #010320;">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">Início</a>
+                <button class="navbar-toggler" style="background-color: #010320;" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#formacoes">Formação</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page"
+                                href="#experiencia">Experiência</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page"
+                                href="#competencias">Competências</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown custom-dropdown">
+                                <a class="btn btn-secondary dropdown-toggle text-white border-0"
+                                    style="background-color: #010320;" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Principais projetos
+                                </a>
+                                <ul class="dropdown-menu" style="background-color: #010320;">
+                                    <li><a class="dropdown-item text-white fw-bold" style="background-color: #010320;"
+                                            href="https://acessibilidade-six.vercel.app" target="_blank">Apeperia -
+                                            Projeto de Acessibilidade
+                                        </a>
+                                    </li>
+                                    <li><a class="dropdown-item text-white fw-bold" style="background-color: #010320;"
+                                            href="https://cefeteria-daniel-almeid.vercel.app/" target="_blank">Cafeteria
+                                            - Projeto com Bootstrap
+                                        </a>
+                                    </li>
+                                    <li><a class="dropdown-item text-white fw-bold" style="background-color: #010320;"
+                                            href="https://monibank-two.vercel.app/" target="_blank">Monibank - Projeto
+                                            com JavaScript
+                                        </a>
+                                    </li>
+                                    <li><a class="dropdown-item text-white fw-bold" style="background-color: #010320;"
+                                            href="https://github.com/daniel-almeid" target="_blank">Acesse todos os meus
+                                            projetos no GitHub
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <span class="navbar-text text-white fw-bold">
+                        Daniel Almeida Andrade
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="sobre py-5 d-flex justify-content-center align-items-center" id="sobre">
+        <div class="container">
+            <div class="card bg-purple mx-auto" style="max-width: 30rem;">
+                <img src="img/perfil.jpeg" class="card-img-top mx-auto rounded-5 mt-3" alt="foto de perfil do criador deste site">
+                <div class="card-body text-center">
+                    <h5 class="card-title h4 text-white fw-bold">Olá, eu sou o Daniel Almeida</h5>
+                    <p class="card-text lead text-white">Software Developer Front End | Junior</p>
+                    <ul class="list-group list-group-horizontal d-flex justify-content-center flex-wrap">
+                        <li class="list-group-item border-0 text-white fw-bold autism-font-color">HTML</li>
+                        <li class="list-group-item border-0 text-white fw-bold autism-font-color">CSS</li>
+                        <li class="list-group-item border-0 text-white fw-bold autism-font-color">JavaScript</li>
+                        <li class="list-group-item border-0 text-white fw-bold autism-font-color">Bootstrap</li>
+                        <li class="list-group-item border-0 text-white fw-bold autism-font-color">Tailwind</li>
+                        <li class="list-group-item border-0 text-white fw-bold autism-font-color">Sass</li>
+                    </ul>
+
+                    <a href="C:\Users\Daniel\Downloads\Curriculo - Daniel Almeida Andrade.pdf" download target="_blank"
+                        class="btn btn-primary btn-block mt-3">Baixe meu currículo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="formacao py-5" id="formacoes">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100 border-0 border-0"
+                        style="background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB); box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-white fw-bold">Análise e Desenvolvimento de Sistemas</h5>
+                            <p class="card-text text-white">Formação de ensino superior na faculdade
+                                Unigranrio, EAD 3º período. Conclusão prevista para dezembro de 2024.</p>
+                            <a href="link-do-seu-site-aqui" target="_blank" class="btn btn-primary">Em andamento</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0"
+                        style="background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB); box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-white fw-bold">HTML & CSS desenvolvimento de projetos web</h5>
+                            <p class="card-text text-white">Finalizei 6 cursos da formação com carga horária estimada em
+                                51 horas,
+                                Concluído em 14 de abril de 2023.</p>
+                            <a href="https://cursos.alura.com.br/degree/certificate/7200b23e-a7c8-4146-b7cb-3561d93f2456"
+                                target="_blank" class="btn btn-primary">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0"
+                        style="background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB); box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-white fw-bold">CSS: Se aprofundando em<br>estilos</h5>
+                            <p class="card-text text-white">Finalizei 5 cursos da formação com carga horária estimada em
+                                36 horas.
+                                Concluído em 03 de maio de 2023.</p>
+                            <a href="https://cursos.alura.com.br/degree/certificate/ad758a3e-edd6-4873-b33c-e1e964eaa4e5"
+                                target="_blank" class="btn btn-primary">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0"
+                        style="background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB); box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;">
+                        <div class="card-body ">
+                            <h5 class="card-title text-white fw-bold">Desenvolva aplicações Web com JavaScript</h5>
+                            <p class="card-text text-white">Finalizei 8 cursos da formação com carga horária estimada em
+                                60 horas.
+                                Concluído em 03 de julho de 2023.</p>
+                            <a href="https://cursos.alura.com.br/degree/certificate/b711b4d6-e2ec-4bab-9534-301ccad3d45e"
+                                target="_blank" class="btn btn-primary">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0"
+                        style="background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB); box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-white fw-bold">Desenvolva aplicações Web acessíveis</h5>
+                            <p class="card-text text-white">Finalizei 2 cursos da formação com carga horária estimada em
+                                20 horas.
+                                Concluído em 18 de julho de 2023. </p>
+                            <a href="https://cursos.alura.com.br/degree/certificate/e8330deb-e367-4292-a44c-d07a556368d7"
+                                target="_blank" class="btn btn-primary">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0"
+                        style="background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB); box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-white fw-bold">Bootstrap 5: Websites responsivos e atraentes</h5>
+                            <p class="card-text text-white">Finalizei 2 cursos da formação com carga horária estimada em
+                                15 horas.
+                                Concluído em 07 de agosto de 2023.</p>
+                            <a href="https://cursos.alura.com.br/degree/certificate/7082e905-ff1d-4f88-ac3d-c7c04ba7699f"
+                                target="_blank" class="btn btn-primary">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <aside class="xp text-white fw-bold d-flex justify-content-center align-items-center">
+        <h5>Experiência Profissional</h5>
+    </aside>
+    <section class="experiencia py-5 d-flex justify-content-center align-items-center" id="experiencia">
+        <div class="card text-center mb-3" style="width: 30rem;">
+            <div class="card-body">
+                <h5 class="card-title text-white fw-bold">Enel Brasil</h5>
+                <p class="card-text text-white">Atualmente sou estagiário de nível superior na Enel Brasil.</p>
+                <p class="card-text text-white">Dezembro de 2022 - Até os dias atuais.</p>
+                <p class="card-text text-white">Modelo híbrido - 8x/mês presencial.</p>
+                <a href="https://www.linkedin.com/in/daniel-almeida-16b94a231/" target="_blank"
+                    class="btn btn-primary border-0" style="border-color: #5B42F3;">
+                    Entre em contato
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <aside class="skills text-white fw-bold d-flex justify-content-center align-items-center py-5">
+        <h5>Competências</h5>
+    </aside>
+
+    <section class="habilidades text-center" id="competencias">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 col-6">
+                    <button type="button" class="btn btn-primary border-1"
+                        style="background-color: #010320; box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Inglês (intermediário)
+                    </button>
+                </div>
+                <div class="col-md-4 mb-3 col-6">
+                    <button type="button" class="btn btn-primary border-1"
+                        style="background-color: #010320; box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        Espanhol (intermediário)
+                    </button>
+                </div>
+                <div class="col-md-4 mb-3 col-6">
+                    <button type="button" class="btn btn-primary border-1"
+                        style="background-color: #010320; box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        Pacote Office
+                    </button>
+                </div>
+                <div class="col-md-4 mb-3 col-6">
+                    <button type="button" class="btn btn-primary border-1"
+                        style="background-color: #010320; box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                        Excel/Macro VBA
+                    </button>
+                </div>
+                <div class="col-md-4 mb-3 col-6">
+                    <button type="button" class="btn btn-primary border-1"
+                        style="background-color: #010320; box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                        UX Design
+                    </button>
+                </div>
+                <div class="col-md-4 mb-3 col-6">
+                    <button type="button" class="btn btn-primary border-1"
+                        style="background-color: #010320; box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                        Power BI
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fs-5 text-white fw-bold" id="exampleModalLabel">Nível de inglês</h1>
+                </div>
+                <div class="modal-body">
+                    Atualmente meu inglês é de nível intermediário (Leitura e escrita de textos). Estou estudando para
+                    falar inglês fluentemente.
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fs-5 text-white fw-bold" id="exampleModalLabel">Nível de espanhol</h1>
+                </div>
+                <div class="modal-body">
+                    Espanhol de nível intermediário apenas para leitura e escrita. No momento não estudo essa lingua.
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fs-5 text-white fw-bold" id="exampleModalLabel">Pacote Office</h1>
+                </div>
+                <div class="modal-body">
+                    Domínio amplo das ferramentas do Pacote Office. Access, Excel, PowerPoint, Word e etc.
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fs-5 text-white fw-bold" id="exampleModalLabel">Excel/Macro VBA</h1>
+                </div>
+                <div class="modal-body">
+                    Possuo conhecimento em Excel Avançado e na sua linguagem de programação VBA, tendo participado de
+                    alguns projetos.
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fs-5 text-white fw-bold" id="exampleModalLabel">UX Design</h1>
+                </div>
+                <div class="modal-body">
+                    Estudei UX Design para melhorar minha perfomance como desenvolvedor front end. Pretendo me
+                    especializar mais nessa área.
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fs-5 text-white fw-bold" id="exampleModalLabel">Power BI</h1>
+                </div>
+                <div class="modal-body">
+                    Conhecimento da ferramenta Power BI em conjunto com o Excel.
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-5" style="background-color: #010320">
+        <div class="container text-center">
+            <div class="mb-3">
+                <a href="https://github.com/daniel-almeid" target="_blank" class="text-white me-3 fs-2"><i
+                        class="bi bi-github"></i></a>
+                <a href="https://twitter.com/djnegao_" target="_blank" class="text-white me-3 fs-2"><i
+                        class="bi bi-twitter"></i></a>
+                <a href="https://www.instagram.com/daniel.devx/" target="_blank" class="text-white me-3 fs-2"><i
+                        class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/daniel-almeida-16b94a231/" target="_blank"
+                    class="text-white fs-2"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <p class="text-white mb-0" style="font-size: 1.2em;">
+                © Daniel Almeida Andrade
+                <br>
+                <span class="" style="font-size: 0.6em;">
+                    Developer Front End Jr
+                </span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+    <script src="acessibilidade.js"></script>
+
+</body>
+
+</html>

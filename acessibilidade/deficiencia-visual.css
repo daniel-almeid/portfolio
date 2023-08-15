@@ -1,0 +1,11 @@
+.visual-impairment-friendly {
+    background-color: #010320; /* Fundo branco para melhor contraste */
+    color: #000; /* Texto preto para melhor contraste */
+    font-size: 24px; /* Aumento do tamanho da fonte */
+    line-height: 2.0; /* Espaçamento entre linhas para facilitar a leitura */
+}
+
+.visual-impairment-friendly .btn{
+    font-size: 24px;
+}
+
