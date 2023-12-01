@@ -7,6 +7,10 @@ body {
     background-color: #010119;
 }
 
+.custom-toggler-icon {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 30 30'><path stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
 .card{
     background-color: #010320;
     border-radius: 10px;
@@ -53,7 +57,6 @@ body {
 }
   
 .custom-dropdown .btn {
-    /* Estilos para o botão dentro da div dropdown */
     background-color: #010119;
     color: white;
     border: none;
@@ -79,5 +82,13 @@ body {
     font-weight: bold;
 }
 
+.fade-element {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
 
+
+.fade-element.fade-in {
+    opacity: 1;
+}
 

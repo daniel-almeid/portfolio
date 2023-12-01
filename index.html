@@ -13,32 +13,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./acessibilidade/autismo.css">
-    <link rel="stylesheet" href="./acessibilidade/dislexia.css">
-    <link rel="stylesheet" href="./acessibilidade/deficiencia-fisica.css">
-    <link rel="stylesheet" href="./acessibilidade/deficiencia-visual.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;600&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
-<body class="">
-    <div class="accessibility-panel">
-        <button id="accessibility-toggle" class="btn btn-primary">Acessibilidade</button>
-        <div id="accessibility-options" class="accessibility-options">
-            <button id="autism-toggle" class="btn btn-secondary">Autismo</button>
-            <button id="dyslexia-toggle" class="btn btn-secondary">Dislexia</button>
-            <button id="physical-disability-toggle" class="btn btn-secondary">Deficiência física</button>
-            <button id="visual-impairment-toggle" class="btn btn-secondary">Deficiência visual</button>
-        </div>
-    </div>
-    </div>
-
-    <script>
-        
-    </script>
     <header>
         <nav class="navbar navbar-expand-lg" style="background-color: #010320;">
             <div class="container-fluid">
@@ -46,7 +28,7 @@
                 <button class="navbar-toggler" style="background-color: #010320;" type="button"
                     data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon custom-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -65,37 +47,9 @@
                                 href="#competencias">Competências</a>
                         </li>
                         <li class="nav-item">
-                            <div class="dropdown custom-dropdown">
-                                <a class="btn btn-secondary dropdown-toggle text-white border-0"
-                                    style="background-color: #010320;" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Principais projetos
-                                </a>
-                                <ul class="dropdown-menu" style="background-color: #010320;">
-                                    <li><a class="dropdown-item text-white fw-bold" style="background-color: #010320;"
-                                            href="https://acessibilidade-six.vercel.app" target="_blank">Apeperia -
-                                            Projeto de Acessibilidade
-                                        </a>
-                                    </li>
-                                    <li><a class="dropdown-item text-white fw-bold" style="background-color: #010320;"
-                                            href="https://cefeteria-daniel-almeid.vercel.app/" target="_blank">Cafeteria
-                                            - Projeto com Bootstrap
-                                        </a>
-                                    </li>
-                                    <li><a class="dropdown-item text-white fw-bold" style="background-color: #010320;"
-                                            href="https://monibank-two.vercel.app/" target="_blank">Monibank - Projeto
-                                            com JavaScript
-                                        </a>
-                                    </li>
-                                    <li><a class="dropdown-item text-white fw-bold" style="background-color: #010320;"
-                                            href="https://github.com/daniel-almeid" target="_blank">Acesse todos os meus
-                                            projetos no GitHub
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <a class="nav-link active text-white" aria-current="page"
+                                href="#projetos">Projetos</a>
                         </li>
-
                     </ul>
                     <span class="navbar-text text-white fw-bold">
                         Daniel Almeida Andrade
@@ -105,7 +59,7 @@
         </nav>
     </header>
 
-    <section class="sobre py-5 d-flex justify-content-center align-items-center" id="sobre">
+    <section class="sobre py-5 d-flex justify-content-center align-items-center fade-element" id="sobre">
         <div class="container">
             <div class="card bg-purple mx-auto" style="max-width: 30rem;">
                 <img src="img/perfil.jpeg" class="card-img-top mx-auto rounded-5 mt-3" alt="foto de perfil do criador deste site">
@@ -113,26 +67,25 @@
                     <h5 class="card-title h4 text-white fw-bold">Olá, eu sou o Daniel Almeida</h5>
                     <p class="card-text lead text-white">Software Developer Front End | Junior</p>
                     <ul class="list-group list-group-horizontal d-flex justify-content-center flex-wrap">
-                        <li class="list-group-item border-0 text-white fw-bold autism-font-color">HTML</li>
-                        <li class="list-group-item border-0 text-white fw-bold autism-font-color">CSS</li>
                         <li class="list-group-item border-0 text-white fw-bold autism-font-color">JavaScript</li>
                         <li class="list-group-item border-0 text-white fw-bold autism-font-color">Bootstrap</li>
                         <li class="list-group-item border-0 text-white fw-bold autism-font-color">Tailwind</li>
                         <li class="list-group-item border-0 text-white fw-bold autism-font-color">Sass</li>
+                        <li class="list-group-item border-0 text-white fw-bold autism-font-color">React Native</li>
                     </ul>
 
-                    <a href="C:\Users\Daniel\Downloads\Curriculo - Daniel Almeida Andrade.pdf" download target="_blank"
-                        class="btn btn-primary btn-block mt-3">Baixe meu currículo</a>
+                    <a href="./img/CURRICULO - DANIEL ALMEIDA ANDRADE (2).jpg" download target="_blank"
+                        class="btn btn-primary btn-block mt-3" id="btnOpenImage">Acessar curriculo</a>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <section class="formacao py-5" id="formacoes">
+    <section class="formacao py-5 fade-element" id="formacoes">
         <div class="container">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                <div class="col">
+                <div class="col fade-element">
                     <div class="card h-100 border-0 border-0"
                         style="background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB); box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;">
                         <div class="card-body">
@@ -143,7 +96,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col fade-element">
                     <div class="card h-100 border-0"
                         style="background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB); box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;">
                         <div class="card-body">
@@ -156,7 +109,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col fade-element">
                     <div class="card h-100 border-0"
                         style="background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB); box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;">
                         <div class="card-body">
@@ -169,7 +122,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col fade-element">
                     <div class="card h-100 border-0"
                         style="background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB); box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;">
                         <div class="card-body ">
@@ -182,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col fade-element">
                     <div class="card h-100 border-0"
                         style="background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB); box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;">
                         <div class="card-body">
@@ -195,7 +148,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col fade-element">
                     <div class="card h-100 border-0"
                         style="background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB); box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;">
                         <div class="card-body">
@@ -212,10 +165,10 @@
     </section>
 
 
-    <aside class="xp text-white fw-bold d-flex justify-content-center align-items-center">
+    <aside class="xp text-white fw-bold d-flex justify-content-center align-items-center fade-element">
         <h5>Experiência Profissional</h5>
     </aside>
-    <section class="experiencia py-5 d-flex justify-content-center align-items-center" id="experiencia">
+    <section class="experiencia py-5 d-flex justify-content-center align-items-center fade-element" id="experiencia">
         <div class="card text-center mb-3" style="width: 30rem;">
             <div class="card-body">
                 <h5 class="card-title text-white fw-bold">Enel Brasil</h5>
@@ -230,12 +183,82 @@
         </div>
     </section>
 
+    <aside class="projetos-principais text-white fw-bold d-flex justify-content-center align-items-center py-5 fade-element">
+        <h5>Projetos</h5>
+    </aside>
 
-    <aside class="skills text-white fw-bold d-flex justify-content-center align-items-center py-5">
+    <section class="projetos py-5 fade-element" id="projetos">
+        <div class="container justify-content-center align-items-center ">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-6 col-md-4 mb-4 d-flex justify-content-center fade-element">
+                    <div class="card h-100" style="width: 18rem;">
+                      <img src="./img/bem-estar-mental.png" class="card-img-top mx-auto justify-content-center rounded-circle" style="border-radius: 10%;" alt="Placeholder Image">
+                      <div class="card-body">
+                        <h5 class="card-title text-white text-center">APP Bem-Estar Mental</h5>
+                        <p class="card-text text-white text-center">Aplicativo criado para a entrega de um projeto na faculdade. Aplicativo criado com React Native</p>
+                        <a href="#https://github.com/daniel-almeid/Bem-estar-mental" class="btn btn-primary d-flex justify-content-center">Acesse no GitHub</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 d-flex justify-content-center fade-element">
+                  <div class="card h-100" style="width: 18rem;">
+                    <img src="./img/serenatto.png" class="card-img-top mx-auto rounded-circle d-flex justify-content-center" style="border-radius: 10%;" alt="Placeholder Image">
+                    <div class="card-body">
+                      <h5 class="card-title text-white text-center">Cafeteria Serenatto</h5>
+                      <p class="card-text text-white text-center ">Projeto criado em parceria com a plataforma Alura. Praticando o Bootstrap.</p>
+                      <a href="#https://github.com/daniel-almeid/cefeteria" class="btn btn-primary d-flex justify-content-center">Acesse no GitHub</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 d-flex justify-content-center fade-element">
+                    <div class="card h-100" style="width: 18rem;">
+                      <img src="./img/meteora.png" class="card-img-top mx-auto rounded-circle d-flex justify-content-center" style="border-radius: 10%;" alt="Placeholder Image">
+                      <div class="card-body">
+                        <h5 class="card-title text-white text-center">Meteora</h5>
+                        <p class="card-text text-white text-center">Projeto criado em parceria com a plataforma Alura. Praticando o Bootstrap.</p>
+                        <a href="#https://github.com/daniel-almeid/meteora" class="btn btn-primary d-flex justify-content-center">Acesse no GitHub</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 d-flex justify-content-center fade-element">
+                    <div class="card h-100" style="width: 18rem;">
+                        <img src="./img/apeperia.png" class="card-img-top mx-auto rounded-circle d-flex justify-content-center" style="border-radius: 10%;" alt="Placeholder Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-white text-center">Apeperia - Acessibilidade</h5>
+                            <p class="card-text text-white text-center">Projeto criado em parceria com a plataforma Alura. Criando um site acessível para todos.</p>
+                            <a href="#https://github.com/daniel-almeid/acessibilidade" class="btn btn-primary d-flex justify-content-center">Acesse no GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 d-flex justify-content-center fade-element">
+                    <div class="card h-100" style="width: 18rem;">
+                        <img src="./img/monibank.png" class="card-img-top mx-auto rounded-circle d-flex justify-content-center" style="border-radius: 10%;" alt="Placeholder Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-white text-center">MoniBank</h5>
+                            <p class="card-text text-white text-center">Projeto criado em parceria com a plataforma Alura. Praticando JavaScript</p>
+                            <a href="#https://github.com/daniel-almeid/Monibank" class="btn btn-primary d-flex justify-content-center">Acesse no GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4 d-flex justify-content-center fade-element">
+                    <div class="card h-100" style="width: 18rem;">
+                        <img src="./img/clone apple.png" class="card-img-top mx-auto rounded-circle d-flex justify-content-center" style="border-radius: 10%;" alt="Placeholder Image">
+                        <div class="card-body">
+                            <h5 class="card-title text-white text-center">Clone - Apple</h5>
+                            <p class="card-text text-white text-center">Clone de uma página da Apple, onde ocorre a venda de um Iphone. Praticando JavaScript</p>
+                            <a href="#https://github.com/daniel-almeid/iphone13-clone" class="btn btn-primary d-flex justify-content-center">Acesse no GitHub</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
+    <aside class="skills text-white fw-bold d-flex justify-content-center align-items-center py-5 fade-element">
         <h5>Competências</h5>
     </aside>
 
-    <section class="habilidades text-center" id="competencias">
+    <section class="habilidades text-center fade-element" id="competencias">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-3 col-6">
@@ -379,7 +402,7 @@
         </div>
     </div>
 
-    <footer class="py-5" style="background-color: #010320">
+    <footer class="py-5 fade-element" style="background-color: #010320">
         <div class="container text-center">
             <div class="mb-3">
                 <a href="https://github.com/daniel-almeid" target="_blank" class="text-white me-3 fs-2"><i
@@ -403,8 +426,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
-        </script>
-    <script src="acessibilidade.js"></script>
+    </script>
+    <script src="script.js"></script>
 
 </body>
 
